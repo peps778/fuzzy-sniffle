@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>MEMA Home</title>
+</head>
+<body>
+    <header>
+        <h1 class="brand-title">MEMA 3D</h1>
+        <div class="menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav id="navMenu">
+            <b>
+            <a href="index.html">HOME</a>
+            <a href="products.html">PRODUCTS</a>
+            </b>
+        </nav>
+    </header>
+    <main class="content-area">
+        <article>            
+           <img class="image"src="home-image3.png">                
+        </article>
+        <figure class="quote-container">
+            <p>"Where Art and Technology Converge: Indulge in a Dazzling Showcase of Premium 3D Models, Elevating Your Designs to Extraordinary Heights!" &nbsp&nbsp - Founders</p>         
+        </figure>           
+    </main>
+</body>
+<script>
+    function toggleMenu() {
+    var menu = document.getElementById('navMenu');
+    menu.classList.toggle('show-nav');
+    
+    var menuIcon = document.querySelector('.menu');
+    menuIcon.classList.toggle('open');
+  }
+</script>
+</html>
